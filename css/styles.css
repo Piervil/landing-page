@@ -1,0 +1,42 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  background-color: #e6e6e6;
+  font-size: 1.6rem;
+}
+
+header {
+  display: flex;
+  justify-content: space-around;
+  background-color: #fff;
+  padding: 1rem;
+}
+
+.logo {
+  width: 190px;
+}
+
+.navbar__menu {
+  display: flex;
+  gap: 4rem;
+  padding: 1.5rem;
+}
+
+.navbar__menu li {
+  list-style: none;
+}
+
+.navbar__menu a {
+  text-decoration: none;
+  font-weight: bold;
+  color: black;
+  font-size: 1.9rem;
+}
