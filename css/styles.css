@@ -1,3 +1,13 @@
+:root {
+  --color-primary: #01042F;
+  --color-button: #020F89;
+  --color-white: #fff;
+  --color-black: #000;
+  --font-size: 1.6rem;
+  --font: 'Oswald', sans-serif;
+  --background: #d3d3d3;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -9,15 +19,23 @@ html {
 }
 
 body {
+  font-family: 'Roboto', sans-serif;
   background-color: #e6e6e6;
   font-size: 1.6rem;
 }
 
+img {
+  max-width: 100%;
+}
+
+/*== The header ==*/
 header {
   display: flex;
   justify-content: space-around;
+  align-items: center;
   background-color: #fff;
   padding: 1rem;
+  font-family: var(--font);
 }
 
 .logo {
@@ -27,7 +45,6 @@ header {
 .navbar__menu {
   display: flex;
   gap: 4rem;
-  padding: 1.5rem;
 }
 
 .navbar__menu li {
@@ -35,8 +52,115 @@ header {
 }
 
 .navbar__menu a {
+  text-transform: uppercase;
   text-decoration: none;
   font-weight: bold;
-  color: black;
+  color: var(--color-black);
   font-size: 1.9rem;
+}
+
+.navbar__menu a:hover {
+  text-decoration: underline;
+}
+/*== End the header ==*/
+
+/*== The Hero ==*/
+.hero {
+  background: rgb(25,13,227);
+  background: linear-gradient(93deg, rgba(25,13,227,1) 31%, rgba(6,33,185,1) 64%);
+  color: var(--color-white);
+}
+
+.hero__container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem 6rem;
+}
+
+.hero__info h1 {
+  width: 95%;
+  font-family: var(--font);
+  text-transform: uppercase;
+  font-size: 4rem;
+  padding-bottom: 2rem;
+}
+
+.hero__info p {
+  width: 70%;
+  line-height: 2rem;
+  padding-bottom: 2rem;
+}
+
+.btn {
+  width: 21%;
+  padding: 1rem;
+  border-radius: 2rem;
+  background-color: var(--color-primary);
+  color: var(--color-white);
+  border: 2px solid var(--color-white);
+  cursor: pointer;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.btn:hover {
+  width: 23%;
+  padding: 1rem;
+  border-radius: 2rem;
+  background-color: var(--color-white);
+  color: var(--color-primary);
+  border: 1px solid var(--color-primary);
+  cursor: pointer;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.btn__color {
+  width: 15%;
+  padding: 1rem;
+  border-radius: 2rem;
+  background-color: var(--color-white);
+  color: var(--color-primary);
+  border: 2px solid var(--color-primary);
+  cursor: pointer;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.btn__color:hover {
+  width: 17%;
+  padding: 1rem;
+  border-radius: 2rem;
+  background-color: var(--color-primary);
+  color: var(--color-white);
+  border: 1px solid var(--color-white);
+  cursor: pointer;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.hero__picture img {
+  width: 85rem;
+}
+/*== End The Hero ==*/
+
+/*== Sobro Nosotros ==*/
+.sobre__container {
+  padding: 6rem 6rem;
+}
+
+.sobre__info h2 {
+  text-align: center;
+  font-family: var(--font);
+  text-transform: uppercase;
+  font-size: 3rem;
+  padding-bottom: 2rem;
+}
+
+.sobre__info p {
+  text-align: center;
+  width: 50%;
+  margin: 0 auto;
+  font-size: 1.6rem;
 }
