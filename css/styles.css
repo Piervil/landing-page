@@ -29,6 +29,7 @@ img {
 }
 
 /*== The header ==*/
+
 header {
   display: flex;
   justify-content: space-around;
@@ -36,6 +37,8 @@ header {
   background-color: #fff;
   padding: 1rem;
   font-family: var(--font);
+  border-bottom: 1px solid #000;
+  box-shadow: 20px 20px 20px;
 }
 
 .logo {
@@ -62,16 +65,16 @@ header {
 .navbar__menu a:hover {
   text-decoration: underline;
 }
-/*== End the header ==*/
 
 /*== The Hero ==*/
+
 .hero {
   background: rgb(25,13,227);
   background: linear-gradient(93deg, rgba(25,13,227,1) 31%, rgba(6,33,185,1) 64%);
   color: var(--color-white);
 }
 
-.hero__container {
+.container {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -95,6 +98,7 @@ header {
 .btn {
   width: 21%;
   padding: 1rem;
+  margin-inline: .5rem;
   border-radius: 2rem;
   background-color: var(--color-primary);
   color: var(--color-white);
@@ -105,7 +109,6 @@ header {
 }
 
 .btn:hover {
-  width: 23%;
   padding: 1rem;
   border-radius: 2rem;
   background-color: var(--color-white);
@@ -129,7 +132,6 @@ header {
 }
 
 .btn__color:hover {
-  width: 17%;
   padding: 1rem;
   border-radius: 2rem;
   background-color: var(--color-primary);
@@ -143,11 +145,11 @@ header {
 .hero__picture img {
   width: 85rem;
 }
-/*== End The Hero ==*/
 
 /*== Sobro Nosotros ==*/
-.sobre__container {
-  padding: 6rem 6rem;
+
+.container {
+  padding: 4rem 6rem;
 }
 
 .sobre__info h2 {
