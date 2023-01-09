@@ -116,6 +116,7 @@ header {
   cursor: pointer;
   text-transform: uppercase;
   font-weight: 700;
+  transition: .5s;
 }
 
 .btn__color {
@@ -139,6 +140,7 @@ header {
   cursor: pointer;
   text-transform: uppercase;
   font-weight: 700;
+  transition: .5s;
 }
 
 .hero__picture img {
@@ -164,4 +166,126 @@ header {
   width: 50%;
   margin: 0 auto;
   font-size: 1.6rem;
+}
+
+/*== SECTION CARDS ==*/
+
+.cards__container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.card__info h2 {
+  text-transform: uppercase;
+  font-size: 3rem;
+  text-align: center;
+  padding-block: 2rem;
+  font-family: var(--font);
+  border-top: 1px solid rgb(246, 246, 246);
+}
+
+.card__info p {
+  font-size: 1.6rem;
+  padding-bottom: 40px;
+}
+
+.benefits {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 15px;
+  width: 80%;
+  text-align: center;
+  padding-bottom: 70px;
+}
+
+.benefits img {
+  width: 40px;
+}
+
+.benefit__card {
+  background-color: var(--color-white);
+  width: 260px;
+  min-height: 260px;
+  border-radius: 20px;
+  padding: 20px 0;
+  margin-inline: 20px;
+  text-align: center;
+} 
+
+.benefit__card:hover {
+  box-shadow: 1px 1px 3px 1px;
+  transition: 0.5s;
+}
+
+.benefit__card img {
+  padding-bottom: 20px;
+}
+
+.benefit__card h3 {
+  padding-bottom: 10px;
+  font-family: var(--font);
+}
+
+.benefit__card p {
+  line-height: 25px;
+  width: 90%;
+  text-align: center;
+  font-size: 1.5rem;
+}
+
+/*== FOOTER ==*/
+
+footer {
+  background-color: #7e82b8;
+  color: var(--color-black);
+}
+
+footer h2 {
+  font-family: var(--font);
+  font-size: 3rem;
+  text-align: center;
+  text-transform: uppercase;
+  padding: 20px 0;
+}
+
+.footer__container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 20px;
+  padding-bottom: 30px;
+}
+
+.footer__container img {
+  width: 30px;
+}
+
+iframe {
+  border: none;
+  border-radius: 4px;
+}
+
+.footer__container .redes {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+}
+
+.footer__container .redes img:hover {
+  background-color: #2600ff;
+  border: none;
+  border-radius: 20px;
+}
+
+.adress,
+.mail, 
+.phone {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  padding-bottom: 20px;
 }
