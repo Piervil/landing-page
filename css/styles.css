@@ -334,6 +334,10 @@ iframe {
     padding-bottom: 2rem;
     padding-top: 2rem;
   }
+  .btn {
+    display: block;
+    margin-bottom: 1.2rem;
+  }
   /*== SERVICIO ==*/
   .card__info p {
     font-size: 1.6rem;
@@ -371,6 +375,9 @@ iframe {
     padding-bottom: 40px;
   }
   /*== NOSOTROS ==*/
+  .sobre__info h2 {
+    font-size: 2rem;
+  }
   .sobre__info p {
   text-align: center;
   width: 100%;
@@ -378,7 +385,7 @@ iframe {
   iframe {
     border: none;
     border-radius: 4px;
-    width: 30rem;
+    width: 28rem;
   }
   .btn {
   margin-bottom: 2rem;
@@ -404,6 +411,9 @@ iframe {
     padding-bottom: 40px;
   }
   /*== NOSOTROS ==*/
+  .sobre__info h2 {
+    font-size: 1.2rem;
+  }
   .sobre__info p {
   text-align: center;
   width: 100%;
