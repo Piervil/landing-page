@@ -12,6 +12,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  text-decoration: none;
 }
 
 html {
@@ -38,6 +39,10 @@ header {
   padding: 1rem;
   font-family: var(--font);
   border-bottom: 1px solid #000;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  z-index: 2;
 }
 
 .logo {
@@ -74,6 +79,7 @@ header {
 }
 
 .container {
+  max-width: 1200px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -81,11 +87,12 @@ header {
 }
 
 .hero__info h1 {
-  width: 95%;
+  width: 90%;
   font-family: var(--font);
   text-transform: uppercase;
   font-size: 4rem;
   padding-bottom: 2rem;
+  padding-top: 2rem;
 }
 
 .hero__info p {
@@ -95,7 +102,6 @@ header {
 }
 
 .btn {
-  width: 21%;
   padding: 1rem;
   margin-inline: .5rem;
   border-radius: 2rem;
@@ -120,7 +126,6 @@ header {
 }
 
 .btn__color {
-  width: 15%;
   padding: 1rem;
   border-radius: 2rem;
   background-color: var(--color-white);
@@ -253,6 +258,7 @@ footer h2 {
 }
 
 .footer__container {
+  max-width: 1200px;
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -289,3 +295,131 @@ iframe {
   gap: 9px;
   padding-bottom: 20px;
 }
+
+@media screen and (max-width: 950px) {
+  /*== THE HERO ==*/
+  .container {
+    display: block;
+    margin-top: 2rem;
+    text-align: center;
+  }
+  .hero__info p {
+    text-align: center;
+    width: 100%;
+  }
+  .hero__picture img {
+    width: 30rem;
+  }
+/*== THE FOOTER ==*/
+.footer__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 30px;
+}
+iframe {
+  border: none;
+  border-radius: 4px;
+  width: 45rem;
+}
+}
+
+@media screen and (max-width: 550px) {
+  /*== THE HERO ==*/
+  .hero__info h1 {
+    width: 100%;
+    font-family: var(--font);
+    text-transform: uppercase;
+    font-size: 3rem;
+    padding-bottom: 2rem;
+    padding-top: 2rem;
+  }
+  /*== SERVICIO ==*/
+  .card__info p {
+    font-size: 1.6rem;
+    width: 95%;
+    text-align: center;
+    padding-bottom: 40px;
+  }
+  /*== NOSOTROS ==*/
+  .sobre__info p {
+  text-align: center;
+  width: 100%;
+  }
+  iframe {
+    border: none;
+    border-radius: 4px;
+    width: 30rem;
+  }
+}
+
+@media screen and (max-width: 388px) {
+  /*== THE HERO ==*/
+  .hero__info h1 {
+    width: 99%;
+    font-family: var(--font);
+    text-transform: uppercase;
+    font-size: 3rem;
+    padding-bottom: 2rem;
+    padding-top: 2rem;
+  }
+  /*== SERVICIO ==*/
+  .card__info p {
+    font-size: 1.6rem;
+    width: 95%;
+    text-align: center;
+    padding-bottom: 40px;
+  }
+  /*== NOSOTROS ==*/
+  .sobre__info p {
+  text-align: center;
+  width: 100%;
+  }
+  iframe {
+    border: none;
+    border-radius: 4px;
+    width: 30rem;
+  }
+  .btn {
+  margin-bottom: 2rem;
+  
+  }
+}
+
+@media screen and (max-width: 288px) {
+  /*== THE HERO ==*/
+  .hero__info h1 {
+    width: 99%;
+    font-family: var(--font);
+    text-transform: uppercase;
+    font-size: 2rem;
+    padding-bottom: 2rem;
+    padding-top: 2rem;
+  }
+  /*== SERVICIO ==*/
+  .card__info p {
+    font-size: 1.6rem;
+    width: 95%;
+    text-align: center;
+    padding-bottom: 40px;
+  }
+  /*== NOSOTROS ==*/
+  .sobre__info p {
+  text-align: center;
+  width: 100%;
+  }
+  .sobre__info h2 {
+  text-align: center;
+  font-size: 2.1rem;
+  }
+  iframe {
+    border: none;
+    border-radius: 4px;
+    width: 25rem;
+  }
+  .btn {
+  margin-bottom: 2rem;
+  
+  }
+}
+
