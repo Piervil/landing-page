@@ -350,6 +350,7 @@ iframe {
       height: 100vh;
       background-color: #000411;
       right: 0;
+      transition: all .3s;
     }
     .navbar__menu li{
       padding: 2rem;
@@ -363,7 +364,7 @@ iframe {
       display: block;
       left: 0;
       cursor: pointer;
-      transition: all .15s;
+      transition: all .5s;
     }
 }
 
