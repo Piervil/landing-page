@@ -149,6 +149,7 @@ header {
 
 .container {
   padding: 4rem 6rem;
+  margin: 0 auto;
 }
 
 .sobre__info h2 {
