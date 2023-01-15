@@ -176,6 +176,9 @@ header {
   align-items: center;
 }
 
+.card__info {
+  margin: 0 auto;
+}
 
 .card__info h2 {
   text-transform: uppercase;
